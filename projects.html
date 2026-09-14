@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daftar Proyek</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-gray-100 min-h-screen flex flex-col justify-between">
+
+  <!-- NAVBAR -->
+  <nav class="bg-gray-800 border-b border-gray-700 sticky top-0 z-10">
+    <div class="max-w-5xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-xl font-bold text-blue-400">Portofolio Saya</h1>
+      <div class="space-x-6">
+        <a href="index.html" class="hover:text-blue-400 transition">Beranda</a>
+        <a href="projects.html" class="text-blue-400 font-semibold underline">Proyek</a>
+        <a href="javascript.html" class="hover:text-blue-400 transition">Tugas JS</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- DAFTAR PROYEK -->
+  <main class="max-w-5xl mx-auto px-4 py-12">
+    <h2 class="text-3xl font-bold mb-2 text-center text-white">Daftar Proyek Saya</h2>
+    <p class="text-gray-400 text-center mb-10">Berikut beberapa karya dan studi kasus yang sedang saya kembangkan.</p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      
+      <!-- Kartu Proyek 1 -->
+      <div class="bg-gray-800 rounded-xl overflow-hidden border border-gray-700 hover:border-blue-500 transition">
+        <div class="h-40 bg-blue-950 flex items-center justify-center text-blue-400 font-bold text-xl">
+          Web Profile UMKM
+        </div>
+        <div class="p-5">
+          <h3 class="text-xl font-semibold mb-2">Desain Landing Page</h3>
+          <p class="text-gray-400 text-sm mb-4">
+            Web responsif menggunakan HTML & Tailwind CSS untuk promosi produk UMKM lokal.
+          </p>
+          <span class="text-xs font-mono bg-blue-900 text-blue-300 px-2.5 py-1 rounded">Web Dev</span>
+        </div>
+      </div>
+
+      <!-- Kartu Proyek 2 -->
+      <div class="bg-gray-800 rounded-xl overflow-hidden border border-gray-700 hover:border-blue-500 transition">
+        <div class="h-40 bg-purple-950 flex items-center justify-center text-purple-400 font-bold text-xl">
+          2D Platformer Mechanic
+        </div>
+        <div class="p-5">
+          <h3 class="text-xl font-semibold mb-2">Sistem Pergerakan Game</h3>
+          <p class="text-gray-400 text-sm mb-4">
+            Prototip pergerakan karakter 2D dengan logika C# dan sistem lompat ganda.
+          </p>
+          <span class="text-xs font-mono bg-purple-900 text-purple-300 px-2.5 py-1 rounded">Game Dev</span>
+        </div>
+      </div>
+
+      <!-- Kartu Proyek 3 -->
+      <div class="bg-gray-800 rounded-xl overflow-hidden border border-gray-700 hover:border-blue-500 transition">
+        <div class="h-40 bg-emerald-950 flex items-center justify-center text-emerald-400 font-bold text-xl">
+          Calculator Tool
+        </div>
+        <div class="p-5">
+          <h3 class="text-xl font-semibold mb-2">Kalkulator Interaktif</h3>
+          <p class="text-gray-400 text-sm mb-4">
+            Aplikasi web sederhana berbasis JavaScript untuk menghitung nilai akhir tugas.
+          </p>
+          <span class="text-xs font-mono bg-emerald-900 text-emerald-300 px-2.5 py-1 rounded">JavaScript</span>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-800 border-t border-gray-700 py-4 text-center text-gray-400 text-sm">
+    &copy; 2026 - Dibuat untuk Tugas Teknologi Web
+  </footer>
+
+</body>
+</html>
