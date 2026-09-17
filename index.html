@@ -3,56 +3,291 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portofolio Pribadi</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-gray-900 text-gray-100 min-h-screen flex flex-col justify-between">
+  <title>Portfolio Ariel Fadly Purba</title>
 
-  <!-- NAVIGATION BAR -->
-  <nav class="bg-gray-800 border-b border-gray-700 sticky top-0 z-10">
-    <div class="max-w-5xl mx-auto px-4 py-4 flex justify-between items-center">
-      <h1 class="text-xl font-bold text-blue-400">Portofolio Saya</h1>
-      <div class="space-x-6">
-        <a href="index.html" class="text-blue-400 font-semibold underline">Beranda</a>
-        <a href="projects.html" class="hover:text-blue-400 transition">Proyek</a>
-        <a href="javascript.html" class="hover:text-blue-400 transition">Tugas JS</a>
+  <link rel="stylesheet" href="./output.css">
+</head>
+
+<body class="bg-gray-950 text-gray-100 min-h-screen">
+
+  <!-- NAVIGATION -->
+  <nav class="bg-gray-950/90 backdrop-blur border-b border-gray-800 sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-6 py-5 flex justify-between items-center">
+
+      <h1 class="text-xl font-bold">
+        <span class="text-blue-400">Ariel</span> Fadly Purba
+      </h1>
+
+      <div class="hidden sm:flex gap-6 text-sm">
+        <a href="index.html"
+           class="text-blue-400 font-semibold">
+          Beranda
+        </a>
+
+        <a href="projects.html"
+           class="text-gray-300 hover:text-blue-400 transition">
+          Proyek
+        </a>
+
+        <a href="javascript.html"
+           class="text-gray-300 hover:text-blue-400 transition">
+          Tugas JS
+        </a>
       </div>
+
     </div>
   </nav>
 
+
   <!-- HERO SECTION -->
-  <main class="max-w-4xl mx-auto px-4 py-16 text-center">
-    <div class="w-32 h-32 mx-auto mb-6 rounded-full bg-blue-600 flex items-center justify-center text-4xl font-bold border-4 border-blue-400">
-      DEV
-    </div>
-    <h2 class="text-4xl sm:text-5xl font-extrabold mb-4 text-white">
-      Halo, Saya Calon <span class="text-blue-400">Software Engineer</span>
-    </h2>
-    <p class="text-gray-400 text-lg max-w-2xl mx-auto mb-8">
-      Selamat datang di situs web portofolio saya. Situs ini dibangun menggunakan Tailwind CSS dan HTML responsif untuk memenuhi tugas mata kuliah Teknologi Web.
-    </p>
+ <!-- HERO SECTION -->
+<main class="relative overflow-hidden">
 
-    <div class="flex justify-center gap-4">
-      <a href="projects.html" class="bg-blue-600 hover:bg-blue-700 text-white font-medium px-6 py-3 rounded-lg shadow-lg transition">
-        Lihat Proyek
-      </a>
-      <a href="javascript.html" class="bg-gray-700 hover:bg-gray-600 text-white font-medium px-6 py-3 rounded-lg transition">
-        Coba Tugas JS
-      </a>
+  <!-- Background gradient -->
+  <div class="absolute inset-0 bg-linear-to-br from-blue-950/40 via-gray-950 to-purple-950/40"></div>
+
+  <section class="relative max-w-6xl mx-auto px-6 py-20 lg:py-24">
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+
+      <!-- BAGIAN KIRI -->
+      <div>
+
+        <p class="text-blue-400 font-semibold tracking-widest uppercase text-sm mb-4">
+          Halo, Saya
+        </p>
+
+        <h2 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-5">
+          Ariel Fadly
+          <span class="text-blue-500">Purba</span>
+        </h2>
+
+        <h3 class="text-2xl sm:text-3xl font-bold mb-6">
+          <span class="text-blue-400">Mahasiswa</span>
+          Ilmu Komputer
+        </h3>
+
+        <p class="text-gray-400 text-lg leading-relaxed max-w-xl mb-8">
+          Saya seorang mahasiswa Ilmu Komputer yang tertarik pada
+          pengembangan web, teknologi, dan terus belajar untuk
+          membangun sesuatu yang bermanfaat.
+        </p>
+
+        <!-- BUTTON -->
+        <div class="flex flex-wrap gap-4">
+
+          <a href="projects.html"
+             class="bg-blue-600 hover:bg-blue-700
+                    text-white font-semibold
+                    px-7 py-3.5 rounded-xl
+                    shadow-lg shadow-blue-900/40
+                    hover:scale-105
+                    transition duration-300">
+            Lihat Proyek →
+          </a>
+
+          <a href="javascript.html"
+             class="border border-gray-700
+                    hover:border-blue-500
+                    hover:text-blue-400
+                    px-7 py-3.5 rounded-xl
+                    transition duration-300">
+            Tugas JavaScript
+          </a>
+
+        </div>
+
+        <!-- SKILLS -->
+        <div class="mt-10 flex flex-wrap gap-3">
+
+          <span class="px-4 py-2 bg-gray-900/80
+                       border border-gray-700
+                       rounded-full text-sm
+                       hover:border-blue-500
+                       transition">
+            HTML5
+          </span>
+
+          <span class="px-4 py-2 bg-gray-900/80
+                       border border-gray-700
+                       rounded-full text-sm
+                       hover:border-blue-500
+                       transition">
+            Tailwind CSS
+          </span>
+
+          <span class="px-4 py-2 bg-gray-900/80
+                       border border-gray-700
+                       rounded-full text-sm
+                       hover:border-blue-500
+                       transition">
+            JavaScript
+          </span>
+
+          <span class="px-4 py-2 bg-gray-900/80
+                       border border-gray-700
+                       rounded-full text-sm
+                       hover:border-blue-500
+                       transition">
+            Database
+          </span>
+
+        </div>
+
+      </div>
+
+
+      <!-- BAGIAN KANAN / FOTO -->
+      <div class="flex justify-center lg:justify-end">
+
+        <div class="relative">
+
+          <!-- Cahaya di belakang foto -->
+          <div class="absolute -inset-5
+                      bg-linear-to-r from-blue-600 to-purple-600
+                      rounded-3xl blur-3xl opacity-25">
+          </div>
+
+          <!-- CARD FOTO -->
+          <div class="relative
+                      w-72 sm:w-80 lg:w-96
+                      bg-gray-900/90
+                      border border-blue-900
+                      rounded-3xl
+                      p-3
+                      shadow-2xl
+                      hover:border-blue-500
+                      transition duration-500">
+
+            <img
+              src="foto-ariel.jpeg"
+              alt="Foto Ariel Fadly Purba"
+              class="w-full h-[430px]
+                     object-cover
+                     rounded-2xl"
+            >
+
+            <!-- INFORMASI FOTO -->
+            <div class="px-3 py-4 flex justify-between items-center">
+
+              <div>
+                <p class="font-bold text-white">
+                  Ariel Fadly Purba
+                </p>
+
+                <p class="text-sm text-gray-400">
+                  Ilmu Komputer
+                </p>
+              </div>
+
+              <p class="text-sm text-blue-400">
+                📍 Singaraja
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
     </div>
 
-    <!-- BADGES KEAHLIAN -->
-    <div class="mt-12 flex flex-wrap justify-center gap-3">
-      <span class="bg-gray-800 text-blue-300 px-4 py-1 rounded-full text-sm border border-gray-700">HTML5</span>
-      <span class="bg-gray-800 text-blue-300 px-4 py-1 rounded-full text-sm border border-gray-700">Tailwind CSS</span>
-      <span class="bg-gray-800 text-blue-300 px-4 py-1 rounded-full text-sm border border-gray-700">JavaScript</span>
-      <span class="bg-gray-800 text-blue-300 px-4 py-1 rounded-full text-sm border border-gray-700">Game Dev Concept</span>
+  </section>
+
+</main>
+
+
+  <!-- TENTANG SAYA -->
+  <section class="border-t border-gray-800 bg-gray-950">
+
+    <div class="max-w-6xl mx-auto px-6 py-16">
+
+      <p class="text-blue-400 font-semibold mb-3">
+        Tentang Saya
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+
+        <div>
+          <h2 class="text-3xl font-bold mb-4">
+            Sedikit Tentang Saya
+          </h2>
+        </div>
+
+        <div>
+          <p class="text-gray-400 leading-relaxed">
+            Saya adalah mahasiswa Ilmu Komputer yang sedang
+            mengembangkan kemampuan di bidang teknologi.
+            Saya tertarik mempelajari web development,
+            database, JavaScript, dan berbagai teknologi
+            lainnya.
+          </p>
+        </div>
+
+      </div>
+
+
+      <!-- KARTU BIDANG -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-5 mt-10">
+
+        <div class="bg-gray-900 border border-gray-800
+                    rounded-2xl p-6
+                    hover:border-blue-500
+                    transition">
+          <div class="text-3xl mb-4">💻</div>
+          <h3 class="font-bold mb-2">
+            Web Development
+          </h3>
+          <p class="text-sm text-gray-400">
+            HTML, CSS, dan Tailwind CSS
+          </p>
+        </div>
+
+
+        <div class="bg-gray-900 border border-gray-800
+                    rounded-2xl p-6
+                    hover:border-blue-500
+                    transition">
+          <div class="text-3xl mb-4">🗄️</div>
+          <h3 class="font-bold mb-2">
+            Database
+          </h3>
+          <p class="text-sm text-gray-400">
+            Mempelajari pengelolaan dan perancangan database
+          </p>
+        </div>
+
+
+        <div class="bg-gray-900 border border-gray-800
+                    rounded-2xl p-6
+                    hover:border-blue-500
+                    transition">
+          <div class="text-3xl mb-4">🚀</div>
+          <h3 class="font-bold mb-2">
+            Technology
+          </h3>
+          <p class="text-sm text-gray-400">
+            Terus belajar teknologi baru
+          </p>
+        </div>
+
+      </div>
+
     </div>
-  </main>
+
+  </section>
+
 
   <!-- FOOTER -->
-  <footer class="bg-gray-800 border-t border-gray-700 py-4 text-center text-gray-400 text-sm">
-    &copy; 2026 - Dibuat untuk Tugas Teknologi Web
+  <footer class="border-t border-gray-800
+                 py-6 text-center
+                 text-gray-500 text-sm">
+
+    © 2026 Ariel Fadly Purba -
+    Tugas Teknologi Web
+
   </footer>
 
 </body>
